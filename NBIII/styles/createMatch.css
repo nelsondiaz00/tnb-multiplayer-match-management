@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y configuración básica */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../images/imagebg2.png') no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+}
+
+.game-settings {
+    width: 100%; /* Usar porcentaje en lugar de píxeles para hacerlo más flexible */
+    min-width: 600px; /* Establece un máximo de ancho */
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    min-height: 400px; /* Aumenta la altura mínima */
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    box-shadow: 12px 12px 0px 0px #3f3f3f;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 40px;
+    justify-items: left;
+}
+
+/* Estilo del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'T323';
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: regular;
+    text-decoration: none;
+}
+
+.back-button {
+    font-family: 'T323';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Estilo del formulario */
+form {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Columnas para legend y botones */
+    gap: 20px;
+}
+
+/* Estilo para cada fieldset */
+fieldset {
+    display: contents; /* Usamos 'contents' para que no afecte la disposición del grid */
+}
+
+legend {
+    font-family: 'T323';
+    font-size: 1.8rem;
+    color: #333;
+    grid-column: 1; /* Posiciona el legend en la primera columna */
+}
+
+/* Contenedor para los botones */
+fieldset div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    grid-column: 2; /* Posiciona los botones en la segunda columna */
+}
+
+/* Estilo para los botones tipo radio y sus etiquetas */
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 10px 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'T323';
+    font-size: 1rem;
+    box-shadow: 6px 6px 0px 0px #583B67;
+    background-color: #809db9;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #ff88cc; /* Cambia el color del botón cuando está seleccionado */
+    transform: translateY(-2px);
+}
+
+/* Estilo del botón de creación */
+button.create-button {
+    background-color: #b172c0;
+    font-family: 'T323';
+    font-size: 1.5rem;
+    color: #fff;
+    width: 40%; /* Reduce el ancho del botón */
+    border: none;
+    font-weight: regular;
+    box-shadow: 6px 6px 0px 0px #583B67;
+    margin-top: 20px;
+    padding: 10px 20px;
+    grid-column: 1 / span 2; /* Abarca ambas columnas */
+    justify-self: center; /* Centra el botón en la cuadrícula */
+    align-self: center; /* Asegura que el botón esté centrado verticalmente */
+}
+
+button.create-button:hover {
+    transform: translateY(-2px);
+}
+
+button.create-button:active {
+    transform: translateY(0);
+}
+
+/* Responsividad para pantallas más grandes */
+@media (min-width: 768px) {
+    label {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .game-settings {
+        padding: 50px;
+        grid-template-columns: 30% 70%; /* Ajuste de columnas para pantallas más grandes */
+    }
+}
+
+@media (min-width: 1024px) {
+    .game-settings {
+        width: 60%; /* Ajuste del ancho para pantallas más grandes */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+}
+
+/* Fuente personalizada */
+@font-face {
+    font-family: 'T323';
+    src: url('../fonts/VT323-Regular.ttf');
+}
