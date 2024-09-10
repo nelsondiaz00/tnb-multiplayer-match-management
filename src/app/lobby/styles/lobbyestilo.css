@@ -1,0 +1,147 @@
+
+body {
+    .block-scroll {overflow:hidden;}
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    background-size: auto;
+    color: #FDFDFD;
+    margin: 0;
+    padding: 0;
+    background-image: url("../imagenes/image_\(3\).png");
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fffcf7c0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #fcf5ff;
+    text-shadow: 
+        -2px -2px 0 #4518A6,  
+        2px -2px 0 #4518A6,
+        -2px 2px 0 #4518A6,
+        2px 2px 0 #4518A6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4518A6;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 50px);
+    padding: 20px;
+    gap: 30px;
+}
+
+.chat-section {
+    width: 30%;
+    background-color: #E856C3;
+    padding: 10px;
+}
+
+.chat-box {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000000;
+}
+
+
+.chat-input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.send-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffbaeea9;
+    color: #FDFDFD;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    font-family: "VT323", monospace;
+}
+.hero-selection {
+    width: 80%; 
+    max-width: 800px;
+    background-color: #9b7cdf9a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+
+.hero-display {
+    width: 100%; 
+    max-width: 800px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+
+.arrow {
+    font-size: 50px; 
+    background: none;
+    border: none;
+    color: #ff009d;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 80%; 
+    max-width: 400px; 
+    height: fit-content;
+}
+
+.play-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: violet;
+    color: #FDFDFD;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    font-family: "VT323", monospace;
+}
+
+.play-button:hover {
+    background-color: #9B6BD5;
+}
+
+

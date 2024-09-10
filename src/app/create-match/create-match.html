@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/createMatch.css">
+    <title>Create Match</title>
+</head>
+<body>
+    <main>
+        <section class="game-room">
+            <header>
+                <h1>Crear Partida</h1>
+                <a href="../SeleccionarPartida/Seleccionarhtml.html" class="back-button">&larr; Volver</a>
+            </header>
+            <form class="game-settings">
+                <fieldset class="Modo">
+                    <legend>Modo de juego</legend>
+                    <div>
+                        <input type="radio" id="1v1" name="game-mode" class="game-mode" />
+                        <label for="1v1">1v1</label>
+                        
+                        <input type="radio" id="2v2" name="game-mode" class="game-mode" />
+                        <label for="2v2">2v2</label>
+                        
+                        <input type="radio" id="3v3" name="game-mode" class="game-mode" />
+                        <label for="3v3">3v3</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Apostar</legend>
+                    <div>
+                        <input type="radio" id="bet-yes" name="bet-option" class="bet-option" />
+                        <label for="bet-yes">Sí</label>
+                        
+                        <input type="radio" id="bet-no" name="bet-option" class="bet-option" />
+                        <label for="bet-no">No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Privacidad</legend>
+                    <div>
+                        <input type="radio" id="public" name="privacy-option" class="privacy-option" />
+                        <label for="public">Pública</label>
+                        
+                        <input type="radio" id="private" name="privacy-option" class="privacy-option" />
+                        <label for="private">Privada</label>
+                    </div>
+                </fieldset>
+                <fieldset class="password-field">
+                    <legend>Contraseña (solo para partidas privadas)</legend>
+                    <input type="password" id="password" name="password" placeholder="Ingrese contraseña" />
+                </fieldset>
+                <button type="submit" class="create-button">Crear</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/createMatch.js"></script>
+</body>
+</html>
